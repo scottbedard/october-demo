@@ -17,3 +17,9 @@ RUN mkdir -p \
     bootstrap/cache \
     && chown -R www-data:www-data storage bootstrap/cache \
     && chmod -R ug+rwX storage bootstrap/cache
+
+RUN php artisan config:clear
+
+RUN php artisan cache:clear
+
+RUN php artisan config:cache
