@@ -3,7 +3,7 @@ app = "october-tenant-example"
 primary_region = "dfw"
 
 [build]
-  image = "ghcr.io/octobercms/runtime-prod:php85"
+  dockerfile = "Dockerfile"
 
 [env]
   APP_ENV = "production"
